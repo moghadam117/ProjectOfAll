@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap'); * {
+    /* box-shadow: inset 0 0 0 1px blue; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+article {
+    background-color: #4E4B6B;
+    color: white;
+    line-height: 100px;
+    padding: 0 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#title {
+    cursor:pointer;
+    animation: scroll 5s linear 1s infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translatex(200px);
+    }
+
+    60% {
+        transform: translatex(-200px);
+    }
+
+    100% {
+    }
+}
+
+#title:hover {
+    animation-play-state: paused;
+}
+
+.anchor {
+    text-decoration: none;
+    color: white;
+    background-color: #068C6B;
+    font-weight: 700;
+    font-size: 22px;
+    transition: all 1.2s ease-out 0.2s;
+}
+
+.anchor:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+nav {
+    box-sizing: content-box;
+    margin: 10px 10px 10px 10px;
+    position: static;
+    text-align: right;
+    font-weight: 700;
+    opacity: 0.7;
+    background-color: #068C6B;
+    margin: 20px auto;
+    line-height: 50px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-button {
+    text-decoration: none;
+    border: 1px solid darkgray;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    box-shadow: 1px 3px;
+    border-radius: 5px;
+}
+
+body.dark-mode {
+    background: #393849;
+    color: white;
+}
+
+section.dark-mode {
+    background: #393849;
+    color: white;
+}
+
+button {
+    background: #068C6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 7px;
+    font-weight: bold;
+    border: 1px solid darkgray;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    box-shadow: 1px 3px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #147059;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle-button:before {
+    content: "Dark Mode"
+}
+
+.dark-mode .toggle-button:before {
+    content: "Light Mode"
+}
+
+.nav-button:hover {
+    background-color: #29D9AD;
+    box-shadow: 1px 3px;
+}
+
+.nav-button:active {
+    background-color: #068C6B;
+    box-shadow: 0px 0px;
+}
+
+#section1, #section2,#section3, #old-style {
+    background-color: #4E4B6B;
+    color: white;
+    padding: 0 50px
+}
+
+.main-list {
+    height: auto;
+    line-height: 30px;
+    background-color: #CBA83F;
+    color: white;
+    padding: 0 50px;
+    font-size: 25px;
+}
+
+.main-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-list a:hover {
+    background-color: #29D9AD;
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+}
+
+figure {
+    display: inline-block;
+}
+
+.video-audio {
+    display: inline-block;
+    height: 200px;
+    box-shadow: 2px 2px 5px 2px;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    width: 45%;
+}
+
+.audio-video {
+    height: 200px;
+    box-sizing: border-box;
+    margin: 0 10px 0 20px;
+    box-shadow: 2px 2px 5px 2px;
+    text-align: center;
+    float: right;
+    width: 45%;
+}
+
+video {
+    width: 40%;
+    height: 96px;
+}
+
+aside {
+    width: 25
+}
+
+.personal-photo {
+    text-align: right;
+}
+
+#personal-photo {
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 50px;
+    transition: all 1.2s linear 0.2s;
+    cursor: alias;
+}
+
+#personal-photo:hover {
+    animation-name: rotated;
+    animation-duration: 2s;
+}
+
+@keyframes rotated {
+    0% {
+        transform: rotate(-360deg)
+    }
+
+    60% {
+        width: 35%;
+    }
+
+    100% {
+    }
+}
+
+.inline-test {
+    background: #CBA83F;
+    line-height: 100px;
+    transition: all 2s ease-in 0.2s;
+}
+
+.inline-test:hover {
+    font-size: 22px;
+}
+
+.span-test {
+    color: red;
+}
+
+#basic-css {
+    font-size: 25px;
+    background-color: black;
+    ; opacity: 0.5;
+    text-align: right;
+    font-family: "Courier New";
+    line-height: 40px;
+}
+
+#basic-css2 {
+    background-image: url("../img/Natural-Wood-Panels-Simple-Background-Image.jpeg");
+    color: white;
+    line-height: 100px;
+}
+
+.container {
+    border: 3px dotted gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.color-container {
+    width: 100%;
+}
+
+.color-panel {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    width: 32%;
+    min-height: 100px;
+}
+
+.blue {
+    background: #1B1DFA;
+    color: white;
+    font-weight: bolder;
+}
+
+.green {
+    background: #24FA69;
+    font-weight: bolder;
+}
+
+.red {
+    background: #ED071E;
+    font-weight: bolder;
+}
+
+.yellow {
+    background: #FAF323;
+    font-weight: bolder;
+}
+
+.font-container {
+    font-size: 18px;
+}
+
+.font-panel {
+    display: inline-grid;
+    width: 45%
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.regular {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-title {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.alegreya {
+    font-family: 'Alegreya', serif;
+}
+
+.spectral {
+    font-family: 'Spectral',sans-serif;
+}
+
+.text-panel p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.text-panel h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.text-panel h1 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.container-flex {
+    margin: 0 auto;
+}
+
+.spacer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#expertise {
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Grid */
+.recipe {
+    box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 255.5);
+    width: 200px;
+    height: auto;
+}
+
+.mins {
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-align: left;
+    position: relative;
+    bottom: 5px;
+}
+
+.description {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+    border-top: 1px solid white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: repeat(2, 450px);
+    grid-gap: 30px;
+    margin-top: 44px;
+    grid-auto-rows: 500px;
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-flow: row;
+    padding-bottom: 30px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+.grid h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #CBA83F;
+    padding: 10px 0px 10px 10px;
+}
+
+/*forms*/
+form {
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+    color: black;
+}
+
+form hr {
+    width: 25%;
+}
+
+form h1 {
+    text-align: center;
+}
+
+#burger {
+    max-height: 30%;
+}
+
+#overlay {
+    width: 80%;
+    margin: 3% auto;
+    height: 95vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+}
+
+#logo {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.toppings label, .cheesy label {
+    margin-right: 25px;
+}
+
+#submit {
+    background-color: #CBA83F;
+}
+
+/*Transition*/
+.button {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #34B3A0;
+    color: #fff;
+}
+
+.button span, .button .icon {
+    position: absolute;
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.button span {
+    width: 62%;
+    left: 0px;
+    line-height: inherit;
+    font-size: 22px;
+}
+
+.button .icon {
+    right: 0;
+    width: 38%;
+}
+
+.button .icon .fa {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.icon {
+    width: 200px;
+    background-color: #1A7B72;
+}
+
+.button:hover span {
+    left: -62%;
+}
+
+.button:hover .icon {
+    width: 100%;
+}
+
+.button:hover .icon .fa {
+    font-size: 30px;
+}
+
+.button span, .button div, .button p {
+    transition: all 1.2s ease-out 0.2s;
+}
+
+.button p {
+    margin: 3px
+}
